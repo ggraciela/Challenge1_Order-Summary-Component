@@ -1,1 +1,12 @@
+html {
+    height: 100%;
+    width: 1440px;
+}
 
+body {
+    background:hsl(225, 100%, 94%);
+    background-image: url(/order-summary-component/Images/pattern-background-desktop.png);
+    min-height: 100vh;
+    max-width: 100vw;
+    background-repeat: no-repeat;
+}
