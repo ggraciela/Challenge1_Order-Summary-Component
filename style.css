@@ -2,10 +2,10 @@ html {
     display: flex;
     height: 100vh;
     width: 100vw;
-    background:hsl(225, 100%, 94%);
+    background: hsl(225, 100%, 94%);
     background-image: url(/order-summary-component/Images/pattern-background-desktop.png);
     background-repeat: no-repeat;
-    font-family: 'Red Hat Display', sans-serif;
+    font-family: "Red Hat Display", sans-serif;
 }
 
 img {
@@ -19,53 +19,95 @@ body {
     margin: auto;
     border-radius: 20px;
 
-    box-shadow: 0px 20px 30px 0px rgba(173,187,238,0.77);
-    -webkit-box-shadow: 0px 20px 30px 0px rgba(173,187,238,0.77);
-    -moz-box-shadow: 0px 20px 30px 0px rgba(173,187,238,0.77);
-
-
+    box-shadow: 0px 20px 30px 0px rgba(173, 187, 238, 0.77);
+    -webkit-box-shadow: 0px 20px 30px 0px rgba(173, 187, 238, 0.77);
+    -moz-box-shadow: 0px 20px 30px 0px rgba(173, 187, 238, 0.77);
 }
 
 article {
     padding: 15px 60px 60px 60px;
     text-align: center;
     color: hsl(224, 23%, 55%);
+}
+
+h2,
+h4 {
+     color: hsl(223, 47%, 23%);
+}
+
+
+section {
+    background: hsl(225, 100%, 98%);
+    padding: 20px 10px 20px 25px;
+    border-radius: 10px;
+
+    display: grid;
+    grid-template-columns: repeat(4, auto-fit);
+    grid-template-rows: repeat(2, 25px);
+    grid-template-areas:
+        "i a a c"
+        "i p p c";
+
+    align-items: center;
+}
+
+.icon {
+     grid-area: i;
+}
+
+.annual {
+    grid-area: a;
+    text-align: left;
+    padding: 0px;
+}
+
+.price {
+    grid-area: p;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+
+
+
+
+.change {
+    grid-area: c;
+    color: hsl(245, 75%, 52%);
+    text-decoration: underline;
+
+    cursor: pointer;
 
 }
 
-h2, h4 {
-    color: hsl(223, 47%, 23%);
+.change:hover {
+    text-decoration: none;
+    opacity: 60%;
 }
+
+
 
 .proceed {
     color: white;
     background: hsl(245, 75%, 52%);
     padding: 15px;
     border-radius: 10px;
-    
-    box-shadow: 0px 10px 21px 0px rgba(190,179,253,0.75);
-    -webkit-box-shadow: 0px 10px 21px 0px rgba(190,179,253,0.75);
-    -moz-box-shadow: 0px 10px 21px 0px rgba(190,179,253,0.75);
+
+    box-shadow: 0px 10px 21px 0px rgba(190, 179, 253, 0.75);
+    -webkit-box-shadow: 0px 10px 21px 0px rgba(190, 179, 253, 0.75);
+    -moz-box-shadow: 0px 10px 21px 0px rgba(190, 179, 253, 0.75);
+
+    cursor: pointer;
 }
 
-
-section {
-    background: hsl(225, 100%, 98%);
-    padding: 10px;
-    
-    display:grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+.proceed:hover {
+    opacity: 70%;
 }
 
-h4 {
-   
+.cancel {
+    cursor: pointer;
 }
 
-.price {
-   
-}
-
-.change {
-   
+.cancel:hover {
+    color:hsl(223, 47%, 23%)
 }
