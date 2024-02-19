@@ -1,11 +1,11 @@
 # About
 
+Frontend reverse engineering challenge from FrontEnd Mentor
+<br />
+
 ## Languages:
 * HTML
 * CSS
-<br />
-Frontend reverse engineering challenge from FrontEnd Mentor
-<br />
 
 Done over the span of 3 days
 <br />
