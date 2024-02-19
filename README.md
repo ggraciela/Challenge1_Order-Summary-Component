@@ -1,8 +1,8 @@
 # About
 
-First practice project of HTML / CSS
+* Languages: HTML / CSS
 <br />
-from FrontEnd Mentor
+Frontend reverse engineering challenge from FrontEnd Mentor
 <br />
 
 Done over the span of 3 days
