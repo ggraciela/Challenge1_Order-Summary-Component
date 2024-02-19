@@ -7,7 +7,6 @@ Frontend reverse engineering challenge from FrontEnd Mentor
 * HTML
 * CSS
 
-Done over the span of 3 days
 <br />
 
 ### Screenshot of final result:
